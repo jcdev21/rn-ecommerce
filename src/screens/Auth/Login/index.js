@@ -1,23 +1,30 @@
 import React from 'react';
 import styled from '@emotion/native';
-import {SafeAreaView, Text} from 'react-native';
+import {Text} from 'react-native';
 
 const Container = styled.View`
+  width: ${props => props.theme.width};
+  height: ${props => props.theme.height};
+  background-color: ${props => props.theme.secondaryColor};
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: ${props => props.theme.secondaryColor};
 `;
 
 const Login = () => {
   return (
-    <SafeAreaView>
-      <Container>
-        <Text>Login</Text>
-      </Container>
-    </SafeAreaView>
+    <Container>
+      <Text>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id
+        quasi ea dolores alias! Nemo inventore amet veniam voluptatem repellat
+        id unde. Perferendis vero itaque officiis iusto amet natus ex.
+      </Text>
+      <Text>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas id
+        quasi ea dolores alias! Nemo inventore amet veniam voluptatem repellat
+        id unde. Perferendis vero itaque officiis iusto amet natus ex.
+      </Text>
+    </Container>
   );
 };
 
