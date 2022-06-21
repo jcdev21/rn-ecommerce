@@ -13,7 +13,6 @@ const theme = {
   thirtyColor: '#97DBAE',
   fourtyColor: '#C3E5AE',
 };
-console.log(theme);
 
 const App = () => {
   return (
