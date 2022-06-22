@@ -10,9 +10,13 @@ export const rules = {
     },
   },
   password: {
+    required: {
+      value: true,
+      message: 'Password required',
+    },
     minLength: {
       value: 5,
-      message: 'min length is 5',
+      message: 'Minimal length is 5',
     },
   },
 };
